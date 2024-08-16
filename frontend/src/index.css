@@ -1,0 +1,203 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  margin: 0 auto;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* homepage */
+.skateboards{
+  outline-width: 0px;
+  outline-color: black;
+  outline-style: solid;
+  overflow: auto;
+}
+
+.skateboards::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.home {
+  height: 80vh;
+}
+.skateboard-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.skateboard-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.skateboard-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.skateboard-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 20%;
+  color: #333;
+}
+
+.create{
+  margin-right: 10px;
+  margin-left: 10px;
+  top: 20px;
+  box-sizing: auto;
+  padding: 10px;
+  height: min-content;
+  background-color: white;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.BuildViewer{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  
+}
+.BuildViewer *{
+  padding: 10px;
+}
+
+.ImageContainer {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.TopDisplay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TitleInput{
+  width: 60%;
+  outline: black;
+  outline-width: 1px;
+  outline-style: solid;
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.PriceDisplay{
+  width: 30%;
+  outline: black;
+  outline-width: 1px;
+  outline-style: solid;
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  
+}
+
+.PartPicker{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.PartButton{
+  width: 80%;
+  min-height: 50px;
+  border-radius: 5px;
+  background-color: orange;
+  border: none;
+}
+
+.SaveButton{
+  margin-top: 20px;
+  width: 90%;
+  min-height: 50px;
+  border-radius: 30px;
+  background-color: yellowgreen;
+  border: none;
+}
+
+.Label{
+  width: 80%;
+  background-color: lightgrey;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
